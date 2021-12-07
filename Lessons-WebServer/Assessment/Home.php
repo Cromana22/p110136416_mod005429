@@ -98,8 +98,8 @@
         
         <div class="column" style="border-left: solid 1px">
             <div class="block"></div>
-            <h5 class="title is-5 has-text-centered block"><strong><u>Results</u></strong></h1>
-            <iframe name="searchResults" title="searchResults" style="border:none;" width="100%" height="175%"></iframe>
+            <h5 class="title is-5 has-text-centered block is-invisible"><strong><u>Results</u></strong></h1>
+            <iframe name="searchResults" src="./pictures/shake-hand-3677534_1280.jpg" title="searchResults" style="border:none;" width="100%" height="175%"></iframe>
         </div>
     </section>
 </body>
