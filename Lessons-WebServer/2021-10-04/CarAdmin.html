@@ -1,0 +1,45 @@
+<html>
+
+<head>
+    <title>Car Search</title>
+</head>
+
+<body>
+    <a href="CarHome.html">
+        <H1>BACK</H1>
+    </a>
+
+    <H1>Insert New Car:</H1>
+
+    <form action="insertCar.php" method="POST" target="iframe1">
+
+        <label>Make: &nbsp;</label><input type="text" name="make"><br />
+        <label>Model: </label><input type="text" name="model"><br />
+        <label>Reg: &nbsp;</label><input type="text" name="reg"><br />
+        <label>Colour: </label><input type="text" name="colour"><br />
+        <label>Miles: &nbsp;</label><input type="text" name="miles"><br />
+        <label>Price: </label><input type="text" name="price"><br />
+        <label>Dealer: &nbsp;</label><input type="text" name="dealer"><br />
+        <label>Town: </label><input type="text" name="town"><br />
+        <label>Telephone: &nbsp;</label><input type="text" name="telephone"><br />
+        <label>Description: </label><input type="text" name="description"><br />
+        <label>Region: &nbsp;</label><input type="text" name="region"><br />
+        <input type="submit" value="Submit">
+
+    </form>
+
+    <br /><br />
+
+    <iframe name="iframe1" title="results of query" style="border:none;" width="100%"></iframe>
+
+    <br /><br />
+
+    <form action="carall.php" method="GET" target="iframe2">
+        <input type="submit" value="Show All Cars">
+    </form>
+
+    <iframe name="iframe2" title="results of query" style="border:none;" width="100%"></iframe>
+
+</body>
+
+</html>

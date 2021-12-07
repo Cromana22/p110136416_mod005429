@@ -1,0 +1,32 @@
+<html>
+
+<head>
+    <title>Car Search</title>
+</head>
+
+<body>
+    <a href="CarHome.html">
+        <H1>BACK</H1>
+    </a>
+
+    <H1>Please enter a make and model</H1>
+
+    <form action="carsearch.php" method="GET" target="iframe">
+
+        <label>Make: &nbsp;</label>
+        <input type="text" name="make">
+        <br />
+        <label>Model: </label>
+        <input type="text" name="model">
+        <br /><br />
+        <input type="submit" value="Search">
+
+    </form>
+
+    <br /><br />
+
+    <iframe name="iframe" title="results of query" style="border:none;" width="100%" height="100%"></iframe>
+
+</body>
+
+</html>

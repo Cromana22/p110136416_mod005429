@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html lang='en'>
+
+<head>
+    <title>AJAX test</title>
+
+    <script>
+        function showUser(string)
+        {
+            if (string == "")
+            {
+                document.getElementById("userDataTable").innerHTML = "";
+            }
+
+            else
+            {
+                var xmlhttp = new XMLHttpRequest();
+                xmlhttp.onreadystatechange = function()
+                {
+                    if (this.readyState == 4 && this.status == 200)  //if the xml request readied nicely
+                    {
+                        document.getElementById("userDataTable").innerHTML= this.responseText; //response text is a php page but without the php - just the html output
+                    }
+                }
+                xmlhttp.open("GET", "getuser.php?q="+string, true); //this creates the page request
+                xmlhttp.send(); //this sends the request for page
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <form>
+        <select name="users" onchange="showUser(this.value)">
+            <option value="">Select a person:</option>
+            <option value="1">Harry Potter</option>
+            <option value="2">Albus Dumbledore</option>
+            <option value="3">Arthur Weasley</option>
+            <option value="4">Sirius Black</option>
+        </select>
+    </form>
+
+    <br />
+
+    <div id="userDataTable">
+        <strong>Person info will be displayed here.</strong>
+    </div>
+</body>
+
+</html>
