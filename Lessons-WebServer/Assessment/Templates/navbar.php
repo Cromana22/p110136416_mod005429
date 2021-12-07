@@ -4,17 +4,20 @@
     $_SESSION['changingBackUrl'] = $changingBackURL;
 
     echo "<nav class='navbar has-background-white-ter'>";
-    echo "<div class='navbar-brand'><a class='navbar-item' href='Home.php'><img src='./pictures/1-logo.png' height='200' /></a></div>";
+    echo "<div class='navbar-brand'><a class='navbar-item' href='Home.php'><img src='./pictures/logo.png' /></a></div>";
     echo "<div class='navbar-menu'>";
 
     echo "<div class='navbar-start'>";
     #region - admin site link
     if ($_SESSION['utype'] == "Admin")
     {
-        echo "<div class='navbar-item'><a href='Admin_Main.php'>Administration</a></div>";
+        echo "<a class='navbar-item is-tab' href='Admin_Main.php'>Administration</a>";
     }
     #endregion
     echo "</div>";
+
+    echo "<h1 class='is-size-1 has-text-centered'><b>-- UCP AUTOS --</b></h1>";
+
 
     echo "<div class='navbar-end'>";
     #region - login_logout link

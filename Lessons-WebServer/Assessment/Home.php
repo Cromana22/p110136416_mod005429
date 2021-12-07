@@ -11,7 +11,7 @@
     <section class="columns">
         <div class="column is-narrow" style="margin-left: 10px">
             <div class="block"></div>
-            <h1 class="has-text-centered block"><strong><u>Search</u></strong></h1>
+            <h5 class="title is-5 has-text-centered block"><strong><u>Search</u></strong></h1>
             <?php
                 #region - Create Select Lists
                 require 'Templates/databaseTemplate.php';
@@ -89,7 +89,7 @@
 
                 echo "<div class='field is-horizontal'>";
                 echo "<div class='field-label is-small'></div>";
-                echo "<div class='field-body'><div class='field'><div class='control centered'><input class='button is-primary' type='submit' value='Search'></div></div></div></div>";
+                echo "<div class='field-body'><div class='field'><div class='control has-text-centered'><input class='button is-primary' type='submit' value='Search'></div></div></div></div>";
 
                 echo "</form>";
                 #endregion
@@ -98,7 +98,7 @@
         
         <div class="column" style="border-left: solid 1px">
             <div class="block"></div>
-            <h1 class="has-text-centered block"><strong><u>Results</u></strong></h1>
+            <h5 class="title is-5 has-text-centered block"><strong><u>Results</u></strong></h1>
             <iframe name="searchResults" title="searchResults" style="border:none;" width="100%" height="175%"></iframe>
         </div>
     </section>
