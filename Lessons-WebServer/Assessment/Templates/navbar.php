@@ -16,7 +16,7 @@
     #endregion
     echo "</div>";
 
-    echo "<h1 class='is-size-1 has-text-centered'><b>-- UCP AUTOS --</b></h1>";
+    echo "<h1 class='is-size-1 has-text-centered'><b>UCP AUTOS</b></h1>";
 
 
     echo "<div class='navbar-end'>";
