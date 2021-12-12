@@ -11,11 +11,6 @@
 ?>
 
 <body>
-    <?php
-        $_SESSION['backUrl'] = $_SESSION['changingBackUrl'];
-        require 'Templates/navbar.php';
-    ?>
-
     <section class="container has-text-centered">
         <div class="block"></div>
         <p class="is-size-4 has-text-danger">Are you sure you want to delete this car?</p><br /><br />
@@ -41,7 +36,7 @@
         echo "<br /><br />";
         echo "<a class='button is-danger' href='Admin_Delete_Confirmed.php?carIndex=" . $carIndex . "'>CONFIRM</a>";
         echo "&nbsp&nbsp&nbsp&nbsp";
-        echo "<a class='button is-info' href='".$_SESSION['backUrl']."'>CANCEL</a>";
+        echo "<a class='button is-info' href='".$_SESSION['backUrl']."' target='_parent'>CANCEL</a>";
         ?>
 
     </section>
