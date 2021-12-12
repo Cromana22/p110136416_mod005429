@@ -71,8 +71,7 @@ while($row = $loadCar->fetch())
         else
         {
             #region - Update Customer If Logged In
-            $updateCustomer = $pdo->prepare("UPDATE customers SET (firstname, surname, address1, address2, town, postcode, email, cardnumber, expiry, cvv)
-            VALUES (:firstname, :surname, :address1, :address2, :town, :postcode, :email, :cardnumber, :expiry, :cvv) WHERE id = :custid");
+            $updateCustomer = $pdo->prepare("UPDATE customers SET firstname = :firstname, surname = :surname, address1 = :address1, address2 = :address2, town = :town, postcode = :postcode, email = :email, cardnumber = :cardnumber, expiry = :expiry, cvv = :cvv WHERE id = :custid");
             $updateCustomer->bindParam(':firstname', $firstname, PDO::PARAM_STR);
             $updateCustomer->bindParam(':surname', $surname, PDO::PARAM_STR);
             $updateCustomer->bindParam(':address1', $address1, PDO::PARAM_STR);
