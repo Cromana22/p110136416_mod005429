@@ -160,31 +160,31 @@
                 #region - create the find sql
                 $findsql = "";
                 if($findmake !="" && $findsql=="") { $findsql = $findsql."make='".$findmake."'"; }
-                elseif($findmake !="" && $findsql!="") { $findsql = $findsql.", make='".$findmake."'"; }
+                elseif($findmake !="" && $findsql!="") { $findsql = $findsql."AND make='".$findmake."'"; }
                 if($findmodel !="" && $findsql=="") { $findsql = $findsql."model='".$findmodel."'"; }
-                elseif($findmodel !="" && $findsql!="") { $findsql = $findsql.", model='".$findmodel."'"; }
+                elseif($findmodel !="" && $findsql!="") { $findsql = $findsql."AND model='".$findmodel."'"; }
                 if($findreg !="" && $findsql=="") { $findsql = $findsql."Reg='".$findreg."'"; }
-                elseif($findreg !="" && $findsql!="") { $findsql = $findsql.", Reg='".$findreg."'"; }
+                elseif($findreg !="" && $findsql!="") { $findsql = $findsql."AND Reg='".$findreg."'"; }
                 if($findcolour !="" && $findsql=="") { $findsql = $findsql."colour='".$findcolour."'"; }
-                elseif($findcolour !="" && $findsql!="") { $findsql = $findsql.", colour='".$findcolour."'"; }
+                elseif($findcolour !="" && $findsql!="") { $findsql = $findsql."AND colour='".$findcolour."'"; }
                 if($findmiles !="" && $findsql=="") { $findsql = $findsql."miles='".$findmiles."'"; }
-                elseif($findmiles !="" && $findsql!="") { $findsql = $findsql.", miles='".$findmiles."'"; }
+                elseif($findmiles !="" && $findsql!="") { $findsql = $findsql."AND miles='".$findmiles."'"; }
                 if($findprice !="" && $findsql=="") { $findsql = $findsql."price='".$findprice."'"; }
-                elseif($findprice !="" && $findsql!="") { $findsql = $findsql.", price='".$findprice."'"; }
+                elseif($findprice !="" && $findsql!="") { $findsql = $findsql."AND price='".$findprice."'"; }
                 if($finddealer !="" && $findsql=="") { $findsql = $findsql."dealer='".$finddealer."'"; }
-                elseif($finddealer !="" && $findsql!="") { $findsql = $findsql.", dealer='".$finddealer."'"; }
+                elseif($finddealer !="" && $findsql!="") { $findsql = $findsql."AND dealer='".$finddealer."'"; }
                 if($findtown !="" && $findsql=="") { $findsql = $findsql."town='".$findtown."'"; }
-                elseif($findtown !="" && $findsql!="") { $findsql = $findsql.", town='".$findtown."'"; }
+                elseif($findtown !="" && $findsql!="") { $findsql = $findsql."AND town='".$findtown."'"; }
                 if($findtelephone !="" && $findsql=="") { $findsql = $findsql."telephone='".$findtelephone."'"; }
-                elseif($findtelephone !="" && $findsql!="") { $findsql = $findsql.", telephone='".$findtelephone."'"; }
+                elseif($findtelephone !="" && $findsql!="") { $findsql = $findsql."AND telephone='".$findtelephone."'"; }
                 if($finddescription !="" && $findsql=="") { $findsql = $findsql."description='".$finddescription."'"; }
-                elseif($finddescription !="" && $findsql!="") { $findsql = $findsql.", description='".$finddescription."'"; }
+                elseif($finddescription !="" && $findsql!="") { $findsql = $findsql."AND description='".$finddescription."'"; }
                 if($findregion !="" && $findsql=="") { $findsql = $findsql."region='".$findregion."'"; }
-                elseif($findregion !="" && $findsql!="") { $findsql = $findsql.", region='".$findregion."'"; }
+                elseif($findregion !="" && $findsql!="") { $findsql = $findsql."AND region='".$findregion."'"; }
                 if($findpicture !="" && $findsql=="") { $findsql = $findsql."picture='".$findpicture."'"; }
-                elseif($findpicture !="" && $findsql!="") { $findsql = $findsql.", picture='".$findpicture."'"; }
+                elseif($findpicture !="" && $findsql!="") { $findsql = $findsql."AND picture='".$findpicture."'"; }
                 if($findavailable !="" && $findsql=="") { $findsql = $findsql."available='".$findavailable."'"; }
-                elseif($findavailable !="" && $findsql!="") { $findsql = $findsql.", available='".$findavailable."'"; }
+                elseif($findavailable !="" && $findsql!="") { $findsql = $findsql."AND available='".$findavailable."'"; }
                 #endregion
 
                 #region - create the update sql
