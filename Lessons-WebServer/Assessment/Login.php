@@ -90,7 +90,7 @@
                 }
                 
                 //set session variables
-                $_SESSION["loggedin"] = "Y";
+                $_SESSION['loggedin'] = "Y";
                 $_SESSION['custid'] = $custid;
                 $_SESSION['firstname'] = $firstname;
                 $_SESSION['utype'] = $uType;
