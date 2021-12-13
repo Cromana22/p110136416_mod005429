@@ -26,7 +26,7 @@
 
     //redirect back to previous location
     $redirect = $_SESSION['backUrl'];
-    header("Location: $redirect");
+    header("Location: ./pictures/shake-hand-3677534_1280.jpg");
 
     ?>
 </body>
