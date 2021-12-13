@@ -88,8 +88,6 @@
 
             if (isset($_POST['submit']))
             {
-                echo $carIndex;
-
                 #region - insert car
                 $insert = $pdo->prepare("INSERT INTO cars (make, model, Reg, colour, miles, price, dealer, town,
                 telephone, description, carIndex, region, picture) VALUES (:make, :model, :reg, :colour, :miles, 
